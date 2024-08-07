@@ -6,7 +6,7 @@ PROCESS_NAME="llm-loss-validator"
 status=$(pm2 list | grep "$PROCESS_NAME" | awk '{print $5}')
 
 if [ "$status" == "online" ]; then
-    echo "$PROCESS_NAME is running."
+    echo "运行中"
 else
-    echo "$PROCESS_NAME is not running."
+    echo "停止"
 fi
