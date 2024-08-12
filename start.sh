@@ -71,7 +71,7 @@ else
 fi
 
 apt update -y
-apt install curl sudo python3-venv iptables build-essential wget jq make gcc nano npm -y
+apt install curl sudo python3-venv iptables build-essential wget jq make gcc nano -y
 read -p "输入Hugging face API: " HF_TOKEN
 read -p "输入Flock API: " FLOCK_API_KEY
 read -p "输入任务ID: " TASK_ID
