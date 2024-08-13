@@ -102,5 +102,7 @@ EOF
 chmod +x run_validator.sh
 pm2 start run_validator.sh --name "llm-loss-validator"
 echo "flock验证者节点已经启动."
+cd
+rm start.sh
 
 
